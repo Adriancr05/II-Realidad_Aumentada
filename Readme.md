@@ -62,12 +62,12 @@ Se crea un proyecto nuevo en Unity, se añade Vuforia Engine y se sustituye la `
 ### 2. Licencia de Vuforia
 Se genera una clave gratuita en el [License Manager](https://developer.vuforia.com/targetmanager/licenseManager/licenseListing) de Vuforia y se introduce en la configuración de Vuforia del objeto `ARCamera`.
 
-![](Screenshots/Screenhot_2.png)
+![](Screenshots/Screenshot_2.png)
 
 ### 3. Base de datos de objetivos
 Se crean las imágenes objetivo en el **Target Manager** de Vuforia, se descarga la base de datos (paquete de Unity) y se importa al proyecto. En este proyecto la base de datos se llama `II`.
 
-![](Screenshots/Screenhot_3.png)
+![](Screenshots/Screenshot_3.png)
 
 ### 4. Image Targets
 Se añaden dos prefabs **ImageTarget** a la escena. En el componente *Image Target Behaviour* de cada uno se configura:
@@ -78,12 +78,12 @@ Se añaden dos prefabs **ImageTarget** a la escena. En el componente *Image Targ
 
 Además, se colocan en posiciones distintas para que no se solapen.
 
-![](Screenshots/Screenhot_4.png)
+![](Screenshots/Screenshot_4.png)
 
 ### 5. Objetos 3D asociados a los objetivos
 Cada dragón se añade como **hijo** de su `ImageTarget` correspondiente, centrado sobre la imagen y con una escala adecuada. De este modo, el componente *Default Observer Event Handler* de Vuforia lo muestra únicamente cuando se detecta la imagen y lo oculta cuando se pierde, **sin necesidad de escribir ningún script**.
 
-![](Screenshots/Screenhot_5.png)
+![](Screenshots/Screenshot_5.png)
 
 ## ▶️ Cómo ejecutar el proyecto
 
